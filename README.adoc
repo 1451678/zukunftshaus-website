@@ -5,7 +5,7 @@ Website der Baugruppe Zukunftshaus Karlsruhe für gemeinschaftliches, bezahlbare
 
 == Todo
 
-- [ ] favicon hinzufügen
+- [x] favicon hinzufügen
 - [x] fonts lokal einbinden
 - [x] E-Mail-Adresse verbergen
 
@@ -28,6 +28,15 @@ Die Fonts (Inter, Font Awesome) sind im Repository enthalten. Bei Bedarf können
 [source,bash]
 ----
 ./setup-fonts.sh
+----
+
+== Favicon aktualisieren
+
+Das Favicon wird aus dem Logo generiert. Benötigt ImageMagick.
+
+[source,bash]
+----
+./create-favicon.sh
 ----
 
 == Lokale Entwicklung
