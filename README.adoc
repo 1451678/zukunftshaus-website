@@ -2,12 +2,14 @@
 
 Website der Baugruppe Zukunftshaus Karlsruhe für gemeinschaftliches, bezahlbares und nachhaltiges Wohnen im Quartier Zukunft Nord.
 
+Erreichbar unter: https://christlang.github.io/zukunftshaus-website/
 
 == Todo
 
 - [x] favicon hinzufügen
 - [x] fonts lokal einbinden
 - [x] E-Mail-Adresse verbergen
+- [x] Pages fürs deployment nutzen
 
 == Projektstruktur
 
