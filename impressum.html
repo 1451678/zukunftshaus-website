@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Impressum - Zukunftshaus Karlsruhe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Zukunftshaus Karlsruhe Logo">
+        <span class="logo-text">Zukunftshaus</span>
+      </a>
+      <nav class="nav">
+        <button class="nav-toggle" id="navToggle" aria-label="Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html#ueber-uns">Über uns</a></li>
+          <li><a href="index.html#projekt">Das Projekt</a></li>
+          <li><a href="index.html#mitmachen">Mitmachen</a></li>
+          <li><a href="index.html#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Impressum Content -->
+  <main class="legal-page">
+    <div class="container">
+      <div class="legal-content">
+        <h1>Impressum</h1>
+
+        <h2>Angaben gemäß § 5 TMG</h2>
+        <p>
+          Baugruppe Zukunftshaus Karlsruhe<br>
+          Friedrich-Blos-Straße 35<br>
+          76133 Karlsruhe
+        </p>
+
+        <h2>Vertreten durch</h2>
+        <p>
+          Frank Bühler<br>
+          Freier Architekt und Stadtplaner BDA
+        </p>
+
+        <h2>Kontakt</h2>
+        <p>
+          E-Mail: <a href="mailto:gemeinsam@zukunftshaus-ka.de">gemeinsam@zukunftshaus-ka.de</a>
+        </p>
+
+        <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+        <p>
+          Frank Bühler<br>
+          Friedrich-Blos-Straße 35<br>
+          76133 Karlsruhe
+        </p>
+
+        <h2>Haftungsausschluss</h2>
+
+        <h3>Haftung für Inhalte</h3>
+        <p>
+          Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt.
+          Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte
+          können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind
+          wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach
+          den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind
+          wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder
+          gespeicherte fremde Informationen zu überwachen oder nach Umständen
+          zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+        </p>
+
+        <h3>Haftung für Links</h3>
+        <p>
+          Unser Angebot enthält Links zu externen Websites Dritter, auf deren
+          Inhalte wir keinen Einfluss haben. Deshalb können wir für diese
+          fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
+          verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber
+          der Seiten verantwortlich.
+        </p>
+
+        <h2>Urheberrecht</h2>
+        <p>
+          Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen
+          Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung,
+          Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der
+          Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des
+          jeweiligen Autors bzw. Erstellers.
+        </p>
+
+        <h2>Datenschutz</h2>
+        <p>
+          Diese Website erhebt und speichert keine personenbezogenen Daten.
+          Es werden keine Cookies gesetzt und keine Analyse-Tools eingesetzt.
+          Bei der Kontaktaufnahme per E-Mail werden die von Ihnen mitgeteilten
+          Daten (Ihre E-Mail-Adresse und ggf. Ihr Name sowie weitere Angaben)
+          von uns gespeichert, um Ihre Anfrage zu beantworten.
+        </p>
+
+        <a href="index.html" class="back-link">
+          &#8592; Zurück zur Startseite
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2025 Zukunftshaus Karlsruhe. Alle Rechte vorbehalten.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript für mobile Navigation -->
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
